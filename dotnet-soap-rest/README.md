@@ -4,6 +4,17 @@
 
 ###### U nastavku su prikazani primjeri CRUD operacija u Postmanu ######
 
-https://github.com/AmarHumackic/FSRE-RNWA-2020/blob/master/
 
-![Kiku](../readme-images/dotnet-delete.PNG)
+![Get All](../readme-images/dotnet-getall.PNG)
+
+
+![Get by ID](../readme-images/dotnet-getbyid.PNG)
+
+
+![Post](../readme-images/dotnet-post.PNG)
+
+
+![Update](../readme-images/dotnet-update.PNG)
+
+
+![Delete](../readme-images/dotnet-delete.PNG)
