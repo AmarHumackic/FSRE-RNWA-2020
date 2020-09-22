@@ -4,4 +4,6 @@
 
 ###### U nastavku su prikazani primjeri CRUD operacija u Postmanu ######
 
-https://github.com/AmarHumackic/FSRE-RNWA-2020/blob/master/readme-images/dotnet-delete.PNG
+https://github.com/AmarHumackic/FSRE-RNWA-2020/blob/master/
+
+![Kiku](../readme-images/dotnet-delete.PNG)
