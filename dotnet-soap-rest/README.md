@@ -5,14 +5,14 @@
 ###### U nastavku su prikazani primjeri CRUD operacija u Postmanu ######
 
 
-###### SOAP/WSDL ######
+## SOAP/WSDL ##
 
 ![Get All](../readme-images/dotnet-soap1.PNG)
 
 ![Get All](../readme-images/dotnet-soap2.PNG)
 
 
-###### REST CRUD ######
+## REST CRUD ##
 
 _Get All_
 
