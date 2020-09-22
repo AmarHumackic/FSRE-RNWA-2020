@@ -1,0 +1,138 @@
+{
+	"info": {
+		"_postman_id": "041cc9d1-7fc9-40b9-8fc5-904f1e1a4652",
+		"name": ".NET - REST",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Update product",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"productCode\": \"A72_3212\",\n\t\"productName\": \"Updated Product\",\n\t\"productLine\": \"Test\",\n\t\"productScale\": \"1:42\",\n\t\"productVendor\": \"Second Gear Diecast\",\n\t\"productDescription\": \"Official logos and insignias. Working steering system. Rotating jet engines\",\n\t\"quantityInStock\": 44,\n\t\"buyPrice\": 75.5,\n\t\"MSRP\": 44.23\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44347/api/products",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44347",
+					"path": [
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post product",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"productCode\": \"A72_32144\",\n\t\"productName\": \"New Product\",\n\t\"productLine\": \"Test\",\n\t\"productScale\": \"1:42\",\n\t\"productVendor\": \"Second Gear Diecast\",\n\t\"productDescription\": \"Official logos and insignias. Working steering system. Rotating jet engines\",\n\t\"quantityInStock\": 44,\n\t\"buyPrice\": 75.5,\n\t\"MSRP\": 44.23\n}"
+				},
+				"url": {
+					"raw": "https://localhost:44347/api/products",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44347",
+					"path": [
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44347/api/products",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44347",
+					"path": [
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get product by code",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44347/api/products/A72_3212",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44347",
+					"path": [
+						"api",
+						"products",
+						"A72_3212"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete product by code",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44347/api/products/A72_32144",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44347",
+					"path": [
+						"api",
+						"products",
+						"A72_32144"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

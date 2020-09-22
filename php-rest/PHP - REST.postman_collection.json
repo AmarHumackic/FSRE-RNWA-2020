@@ -1,0 +1,130 @@
+{
+	"info": {
+		"_postman_id": "d54e1cf3-5f6e-4a37-b3ec-115dd8cb2288",
+		"name": "PHP - REST",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all employees",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/php-rest/api/employeesApi.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"php-rest",
+						"api",
+						"employeesApi.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get employee by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/php-rest/api/employeesApi.php?id=1002",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"php-rest",
+						"api",
+						"employeesApi.php"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1002"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post employee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"email2@test.com\",\r\n    \"employeeNumber\": 13233,\r\n    \"extension\": \"test_extension2\",\r\n    \"firstName\": \"test firstName2\",\r\n    \"jobTitle\": \"test jobTitle2\",\r\n    \"lastName\": \"lastName2\",\r\n    \"officeCode\": \"test officeCode2\",\r\n    \"reportsTo\": 1002\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost/php-rest/api/employeesApi.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"php-rest",
+						"api",
+						"employeesApi.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update employee",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"updatedemail2@test.com\",\r\n    \"employeeNumber\": 13233,\r\n    \"extension\": \"updatedtest_extension2\",\r\n    \"firstName\": \"updatedtest firstName2\",\r\n    \"jobTitle\": \"updatedtest jobTitle2\",\r\n    \"lastName\": \"updatedlastName2\",\r\n    \"officeCode\": \"updatedtest officeCode2\",\r\n    \"reportsTo\": 1002\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost/php-rest/api/employeesApi.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"php-rest",
+						"api",
+						"employeesApi.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete employee by ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/php-rest/api/employeesApi.php?id=1088",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"php-rest",
+						"api",
+						"employeesApi.php"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1088"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
