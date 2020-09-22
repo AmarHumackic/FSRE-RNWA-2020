@@ -1,0 +1,62 @@
+body {
+  margin: 0px;
+}
+
+.formContainer {
+  display: flex;
+  background-color: rgb(201, 201, 201);
+  padding: 15px 10px; 
+}
+
+.formItemContainer {
+	width: 400px;
+	margin: 0px 20px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.formItemContainer label, .formContainer button {
+  font-weight: bold;
+}
+
+.resultsFor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20px;
+  font-style: italic;
+}
+
+.footer {
+  width: 100%;
+  height: 70px;
+  position: absolute;
+  bottom: 0;
+  background-color:  rgb(201, 201, 201);
+  display: flex;
+  justify-content: center;
+}
+
+.footer p {
+  font-weight: bold;
+  align-self: center;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+  
