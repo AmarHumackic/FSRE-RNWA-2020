@@ -18,7 +18,6 @@ class Employee
 		$this->conn = $db;
 	}
 
-	// convenience encapsulating method to route the request further
 	function read()
 	{
 		if (!empty($_GET["id"])) {

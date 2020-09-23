@@ -2,18 +2,14 @@
 
 class Database
 {
-
-    // specify your own database credentials
     private $host = "localhost";
     private $db_name = "classicmodels";
     private $username = "root";
     private $password = "";
     private $conn;
 
-    // get the database connection
     public function getConnection()
     {
-
         $this->conn = null;
 
         try {

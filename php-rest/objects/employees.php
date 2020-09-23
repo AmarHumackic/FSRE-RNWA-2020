@@ -18,7 +18,6 @@ class Employee
 		$this->conn = $db;
 	}
 
-	// convenience encapsulating method to route the request further
 	function read()
 	{
 		if (!empty($_GET["id"])) {
@@ -28,7 +27,6 @@ class Employee
 		}
 	}
 
-	// gets all jobs
 	function readAll()
 	{
 		$query = "SELECT * FROM " . $this->table_name;
@@ -62,7 +60,6 @@ class Employee
 		}
 	}
 
-	// gets a single job
 	function readSingle()
 	{
 		$query = "SELECT * FROM " . $this->table_name . " WHERE employeeNumber = :employeeNumber";
@@ -95,7 +92,6 @@ class Employee
 		}
 	}
 
-	// creates a new job
 	function create()
 	{
 		$body = json_decode(file_get_contents("php://input"), true);
@@ -108,7 +104,6 @@ class Employee
 		$officeCode = $body["officeCode"];
 		$reportsTo = $body["reportsTo"];
 
-		// checks the validity
 		if (
 			!empty($email) &&
 			!empty($employeeNumber) &&
@@ -156,7 +151,6 @@ class Employee
 		}
 	}
 
-	// updates an existing job
 	function update()
 	{
 		$body = json_decode(file_get_contents("php://input"), true);
